@@ -24,4 +24,10 @@ public class EmployeeController {
     {
 return employeeService.signIn(empEmailId,empPassword);
     }
+    
+    @GetMapping("/get")
+    public String get()
+    {
+    	return"done change";
+    }
 }
